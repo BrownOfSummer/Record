@@ -1,0 +1,13 @@
+#####################
+(1) ./vimrc modify from https://github.com/spf13/spf13-vim
+    
+    插件管理
+    1、配置并安装插件
+    echo Bundle \'spf13/vim-colors\' >> ~/.vimrc.bundles.local    #插件：vim-colors，需首先在文件.vimrc.bundles.local中进行配置
+    vim +BundleInstall! +BundleClean +q                           #安装
+
+    2、卸载插件
+    echo UnBundle \'AutoClose\' >> ~/.vimrc.local                 #卸载插件：AutoClose
+    echo UnBundle \'scrooloose/syntastic\' >> ~/.vimrc.local      #卸载插件：scrooloose/syntastic
+
+    brew install vim --with-lua #解决自动补全
