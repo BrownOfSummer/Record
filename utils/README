@@ -1,0 +1,6 @@
+## 1 opencv C/C++ Image Lib
+(1) CxImage : http://www.xdp.it/cximage.html
+(2) CImg    : http://cimg.eu ; https://sourceforge.net/projects/cimg/
+    Only a .h file, and can draw and show.
+(3) FreeImage: http://freeimage.sourceforge.net
+    has meta exif.
