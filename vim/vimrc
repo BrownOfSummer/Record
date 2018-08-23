@@ -872,4 +872,5 @@
 "
 "
 " new add
+hi Comment ctermfg=darkgray
 vmap <C-c> "+y

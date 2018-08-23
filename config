@@ -1,0 +1,24 @@
+Host *
+    ForwardAgent    yes
+
+
+Host bj
+    HostName        54.223.158.197
+    Port            22
+    User            admin
+    ForwardAgent    yes
+
+host ubuntu
+    HostName        192.168.65.192
+    Port            22
+    User            vobile
+
+
+Host seoul
+    HostName        52.78.231.91
+    Port            22
+    User            admin
+    ProxyCommand ssh bj -W %h:%p
+    DynamicForward 8080
+    RemoteForward 4343 seals.vobile.cn:443
+    LocalForward 8000 www.google.com:443
